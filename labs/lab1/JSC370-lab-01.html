@@ -143,7 +143,14 @@ python3 -m pip install numpy pandas matplotlib jupyter ipykernel plotnine plotly
 <p>Also install the Jupyter extension in VS Code, similarly to how we installed the Quarto extension above (search for Jupyter).</p>
 <p>Confirm Quarto can see Jupyter</p>
 <pre class="{bash}"><code>quarto check jupyter</code></pre>
-<pre class="{bash}"><code>PASTE OUTPUT HERE</code></pre>
+<pre class="{bash}"><code>Quarto 1.8.26
+[✓] Checking Python 3 installation....OK
+      Version: 3.13.3
+      Path: /Users/kevinhu/projects/uoft/jsc370/.venv/bin/python
+      Jupyter: 5.9.1
+      Kernels: python3
+
+[✓] Checking Jupyter engine render....OK</code></pre>
 </section>
 <section id="verify-your-python-environment" class="level2">
 <h2 class="anchored" data-anchor-id="verify-your-python-environment">4. Verify your Python environment</h2>
@@ -166,8 +173,8 @@ from plotnine.data import penguins
 
 (
     ggplot(penguins, aes("bill_length_mm", "bill_depth_mm", color="species"))
-    + geom_point(alpha=0.4)  
-    + labs(title="Penguin bill measurements — YOUR NAME")  
+    + geom_point(alpha=0.3)  
+    + labs(title="Penguin bill measurements — Kevin Hu")  
     + theme_minimal()
 )</code></pre>
 </section>
